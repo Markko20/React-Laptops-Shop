@@ -1,0 +1,29 @@
+.home__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-items{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.accordion-button:focus,
+.accordion-button:not(.collapsed){
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.accordion-button{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@media(min-width: 1400px) {
+  .container{
+    max-width: 1600px !important;
+  }
+}
