@@ -21,7 +21,7 @@ const index = ({ items, id, name }) => {
         aria-labelledby={`panelsStayOpen-heading${id}`}>
         <div className="accordion-body">
           {items.map((name) => {
-            return <CheckBox title={name} />;
+            return <CheckBox key={name} title={name} />;
           })}
         </div>
       </div>

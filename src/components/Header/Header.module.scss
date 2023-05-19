@@ -44,14 +44,12 @@
   margin-right: 45px;
   width: 40px;
   height: 40px;
-
-  svg {
-    fill: #000;
-  }
+  transition: all .3s ease-in-out;
 
   &:hover{
     width: 45px;
     height: 45px;
+    margin-right: 40px;
   }
 }
 

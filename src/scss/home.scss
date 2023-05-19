@@ -1,11 +1,11 @@
 .home__wrapper{
   display: flex;
-  justify-content: space-between;
 }
 
 .card-items{
   display: flex;
   flex-wrap: wrap;
+  align-content: baseline;
 }
 
 .accordion-button:focus,

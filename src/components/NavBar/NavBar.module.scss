@@ -2,8 +2,10 @@
   background: #ffffff;
   border-radius: 40px;
   min-width: 348px;
+  max-width: 348px;
   margin-right: 45px;
   height: 100%;
+
 }
 
 button {
@@ -47,7 +49,6 @@ button {
 }
 
 .inputTitle {
-  font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 25px;
@@ -64,6 +65,8 @@ button {
   height: 40px;
   background: #f7f7f7;
   padding: 0 9px;
+  font-size: 17px;
+  font-weight: 400;
 
   &:focus {
     border: 1px solid #333;
