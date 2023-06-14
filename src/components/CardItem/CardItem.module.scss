@@ -4,7 +4,6 @@
   border-radius: 26px;
   width: 280px;
   height: 350px;
-  cursor: pointer;
   transition: 0.3s ease-in-out;
   margin-right: 10px;
   margin-bottom: 50px;
@@ -33,6 +32,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  max-height: 40px;
+  
 }
 
 .block {
@@ -53,8 +54,7 @@
   font-size: 20px;
   line-height: 24px;
   text-decoration-line: line-through;
-  margin-top: 40px;
-
+  margin-top: 20px;
   color: rgba(0, 0, 0, 0.37);
 }
 
@@ -66,4 +66,5 @@
 
 .heart {
   margin-right: 23px;
+  cursor: pointer;
 }

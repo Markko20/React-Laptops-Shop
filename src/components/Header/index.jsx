@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Header.module.scss';
 import { Link, useLocation } from 'react-router-dom';
 
 const index = () => {
   /* eslint-disable */
   const { pathname } = useLocation();
-
+  
   return (
     <header className={styles.header}>
       <Link to="/" className={styles.name}>

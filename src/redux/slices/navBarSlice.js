@@ -1,6 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { intersection } from 'lodash';
 /* eslint-disable */
 
 export const fetchData = createAsyncThunk('data/fetchData', async (params) => {
@@ -61,7 +60,7 @@ export const fetchData = createAsyncThunk('data/fetchData', async (params) => {
   addToSort(params.ssd.length, params.ssd, 'ssd', sortDataBySSD)
 
   data.forEach(element => {
-    if(element.price >= params.minPriceValue && element.price <= params.maxPriceValue) {
+    if(element.price >= Number(params.minPriceValue) && element.price <= Number(params.maxPriceValue)) {
       sortDataByPrice.push(element)
       update = false
     }
@@ -156,11 +155,19 @@ export const navBarSlice = createSlice({
       }
 
       if(action.payload.category === 'minPriceValue'){
-        state.sortItems.minPriceValue = action.payload.value
+        if(action.payload.value){
+          state.sortItems.minPriceValue = action.payload.value
+        } else{
+          state.sortItems.minPriceValue = 0
+        }
       }
 
       if(action.payload.category === 'maxPriceValue'){
-        state.sortItems.maxPriceValue = action.payload.value
+        if(action.payload.value){
+          state.sortItems.maxPriceValue = action.payload.value
+        } else{
+          state.sortItems.maxPriceValue = Infinity
+        }
       }
     },
   },

@@ -7,9 +7,6 @@
 .main{
   width: 100%;
   background-color: #fff;
-}
-
-.mainInner{
   padding: 60px 30px;
   display: flex;
   justify-content: space-between;
@@ -74,4 +71,58 @@
 .heart{
   margin-right: 38px;
   cursor: pointer;
+}
+
+.characteristics{
+  padding: 60px 35px;
+  margin: 50px 0;
+  background: #FFFFFF;
+  border-radius: 33px;
+  width: 100%;
+
+  &Title{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+  }
+
+  &Block{
+    margin-top: 40px;
+  }
+
+  &Item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    h3{
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 36px;
+    }
+  }
+}
+
+.description{
+  padding: 60px 35px;
+  background: #FFFFFF;
+  border-radius: 33px;
+  width: 100%;
+
+  &Title{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+  }
+
+  &Text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    margin-top: 40px;
+  }
 }

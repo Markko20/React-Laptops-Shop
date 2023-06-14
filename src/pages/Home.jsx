@@ -20,7 +20,8 @@ const Home = () => {
   const items = laptops.map((obj, i) => {
     return (
       <CardItem
-        key={i}
+        key={obj.id}
+        id={obj.id}
         title={`${obj.manufacturer} ${obj.model}`}
         oldPrice={obj.priceWithoutDiscount}
         newPrice={obj.price}
@@ -29,7 +30,7 @@ const Home = () => {
   })
 
   return (
-    <div>
+    <>
       <Header />
       <div className="container">
         <div className="home__wrapper">
@@ -39,7 +40,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
