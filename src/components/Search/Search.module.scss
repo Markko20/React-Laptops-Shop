@@ -1,0 +1,41 @@
+.input {
+  max-width: 580px;
+  width: 100%;
+  height: 75px;
+  border-radius: 17px;
+	background-color: #fff;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+	&Block{
+		max-width: 580px;
+		border: 1px solid #000;
+		border-radius: 17px;
+		width: 100%;
+		height: 74px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	input{
+		width: 100%;
+		height: 100%;
+		padding-left: 25px;
+		border-radius: 17px;
+		padding-right: 20px;
+
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	img{
+		padding-right: 30px;
+		cursor: pointer;
+	}
+}

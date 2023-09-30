@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Header.module.scss';
 import { Link, useLocation } from 'react-router-dom';
+import Search from '../Search'
 
 const index = () => {
   /* eslint-disable */
@@ -11,7 +12,7 @@ const index = () => {
       <Link to="/" className={styles.name}>
         React Laptops Shop
       </Link>
-      {pathname === '/' && <input className={styles.input} placeholder="Поиск..." type="text" />}
+      {pathname === '/' && <Search />}
 
       <div className={styles.images}>
         {pathname !== '/favorites' && (
